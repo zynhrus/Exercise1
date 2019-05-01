@@ -5,30 +5,42 @@
 }
 
 body {
-  background: #36454f;
-  background-image: url("../images/top-right-red.svg");
+  background: #ffffff;
+  background-image: url("../images/illustration1.svg");
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-size: 720px;
-  background-position: right top;
-  color: rgb(235, 235, 235);
+  color: rgb(0, 0, 0);
   display: flex;
 }
 
 .container {
   box-sizing: border-box;
-  margin-top: 350px;
-  margin-left: 17%;
+  margin-top: 310px;
+  margin-left: 14%;
 }
 
 .giant {
-  font-size: 80px;
+  font-size: 500%;
 }
 
 .medium {
-  font-size: 40px;
+  font-size: 230%;
+}
+
+.resume {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+  padding-right: 30px;
+}
+
+img {
+  position: absolute;
 }
 
 /* FOOTER */
+
 .footer {
   position: absolute;
   bottom: 30px;
@@ -38,7 +50,7 @@ body {
 
 a {
   text-decoration: none;
-  color: rgb(235, 235, 235);
+  color: rgb(0, 0, 0);
   box-sizing: border-box;
   float: left;
   display: block;
@@ -59,16 +71,17 @@ a {
 }
 
 /* POPUP */
+
 .button {
   text-decoration: none;
   font-size: 1rem;
   text-transform: uppercase;
   display: inline-block;
   border-radius: 1.5rem;
-  background-color: #fff;
-  color: #000000;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
   padding: 1rem 2rem;
-  width: 145px;
+  width: 147.5px;
 }
 
 .popup {
@@ -98,7 +111,7 @@ a {
   max-height: 600px;
   width: 60%;
   height: 80%;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   -webkit-transform: rotate(32deg);
   transform: rotate(32deg);
   transition: 0.64s ease-in-out;
@@ -132,7 +145,7 @@ a {
   font-weight: 600;
   margin-bottom: 2rem;
   text-transform: uppercase;
-  color: #0a0a0a;
+  color: #000000;
 }
 
 .popup__text p {
@@ -161,22 +174,23 @@ a {
   height: 3rem;
   font-size: 0.875rem;
   border-radius: 100%;
-  background-color: #0a0a0a;
-  color: #fff;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
   text-align: center;
   cursor: pointer;
   text-decoration: none;
 }
 
-/* ANIMATION*/
+/* Typewriter*/
+
 .typewriter h2 {
   font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(30, end), blink-caret 1s step-end infinite;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3s steps(30, end), blink-caret 1s step-end infinite;
 }
 
 @keyframes typing {
@@ -194,6 +208,6 @@ a {
     border-color: transparent;
   }
   50% {
-    border-color: rgb(255, 254, 253);
+    border-color: rgba(0, 0, 0, 0.404);
   }
 }
