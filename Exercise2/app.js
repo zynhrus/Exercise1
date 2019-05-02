@@ -80,7 +80,7 @@ const performCalculation = {
 
 function resetCalculator() {
   calculator.displayValue = "0";
-  calculator.first = null;
+  calculator.firstOperand = null;
   calculator.waitingForSecondOperand = false;
   calculator.operator = null;
 }
