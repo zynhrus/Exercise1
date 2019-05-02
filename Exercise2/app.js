@@ -30,6 +30,24 @@ function inputDecimal(dot) {
   }
 }
 
+function plusMinus() {
+  if (calculator.displayValue != "0") {
+    calculator.displayValue *= -1;
+  }
+}
+
+function inputPercent() {
+  if (calculator.displayValue != "0") {
+    calculator.displayValue /= 100;
+  }
+}
+
+function backSpace() {
+  if (calculator.displayValue != "0") {
+    calculator.displayValue = calculator.displayValue.slice(0, -1);
+  }
+}
+
 function handleOperator(nextOperator) {
   const { firstOperand, displayValue, operator } = calculator;
   const inputValue = parseFloat(displayValue);
@@ -91,6 +109,25 @@ keys.addEventListener("click", event => {
     updateDisplay();
     return;
   }
+
+  if (target.classList.contains("plus-minus")) {
+    plusMinus(target.value);
+    updateDisplay();
+    return;
+  }
+
+  if (target.classList.contains("percent")) {
+    inputPercent(target.value);
+    updateDisplay();
+    return;
+  }
+
+  if (target.classList.contains("delete")) {
+    backSpace(target.value);
+    updateDisplay();
+    return;
+  }
+
   if (target.classList.contains("clear")) {
     resetCalculator();
     updateDisplay();

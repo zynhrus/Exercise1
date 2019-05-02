@@ -61,35 +61,54 @@ button:focus {
 }
 
 .perhitungan {
-   font-size: 35px;
-   background-color: #1d8ad3;
-   border-color: #337cac;
+   font-size: 32.5px;
+   background: #D27AE8;
    border: none;
    color: white;
 }
 
-.clear {
-   background-color: #f1141b;
+.kurang {
+   background-color: #7BB4F7;
    border-color: #b0353a;
    color: #fff;
-   grid-area: 2 / 4;
-}
-
-.nol {
-   font-size: 30px;
-   height: 100%;
-   grid-area: 5 / 1 / 1 span/ 2 span;
-}
-
-.decimal {
-   font-size: 50px;
-   margin-bottom: 20px;
+   grid-area: 3 / 4 / 6 / 5;
 }
 
 .sama-dengan {
    background: linear-gradient(to bottom, #29ffc6, #20e3b2, #0cebeb);
-   border-color: #337cac;
    color: #fff;
    height: 100%;
-   grid-area: 3 / 4 / 6 / 5;
+   grid-area: 5 / 4 / 6 / 5;
+}
+
+.kali {
+   background: #F47474;
+   border: none;
+   color: white;
+   grid-area: 2 / 4 / 6 / 5;
+}
+
+.tambah {
+   background: rgb(255, 141, 47);
+   border: none;
+   color: white;
+   grid-area: 4 / 4 / 6 / 5;
+}
+
+.clear {
+   font-size: 25px;
+   border: none;
+   color: rgb(0, 0, 0);
+}
+
+.plus-minus {
+   font-size: 25px;
+   border: none;
+   color: rgb(0, 0, 0);
+}
+
+.percent {
+   font-size: 27.5px;
+   border: none;
+   color: rgb(0, 0, 0);
 }
