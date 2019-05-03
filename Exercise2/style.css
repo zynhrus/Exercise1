@@ -28,7 +28,7 @@ html {
    border: none;
    border-top-left-radius: 10px;
    border-top-right-radius: 10px;
-   background-color: #252525;
+   background: linear-gradient(to right, #A3A2FB, #8482FB);
    color: #fff;
    text-align: right;
    padding-right: 20px;
@@ -61,44 +61,37 @@ button:focus {
 }
 
 .perhitungan {
-   font-size: 32.5px;
-   background: #D27AE8;
+   font-size: 35px;
    border: none;
-   color: white;
+   color: #8482FB;
 }
 
 .kurang {
-   background-color: #7BB4F7;
-   border-color: #b0353a;
-   color: #fff;
+   border-color: #b35255;
    grid-area: 3 / 4 / 6 / 5;
 }
 
 .sama-dengan {
-   background: linear-gradient(to bottom, #29ffc6, #20e3b2, #0cebeb);
+   background: linear-gradient(to right, #A3A2FB, #8482FB);
    color: #fff;
    height: 100%;
    grid-area: 5 / 4 / 6 / 5;
 }
 
 .kali {
-   background: #F47474;
    border: none;
-   color: white;
    grid-area: 2 / 4 / 6 / 5;
 }
 
 .tambah {
-   background: rgb(255, 141, 47);
    border: none;
-   color: white;
    grid-area: 4 / 4 / 6 / 5;
 }
 
 .clear {
    font-size: 25px;
    border: none;
-   color: rgb(0, 0, 0);
+   color: rgb(247, 1, 1);
 }
 
 .plus-minus {
